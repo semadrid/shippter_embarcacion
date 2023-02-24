@@ -1,10 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const shipRoutes = require("../shippter_test/src/routes/ship.js");
 
 //para variables entorno
 require("dotenv").config();
 
 const app = express();
+
+//Middleware
+app.use(express.json());
+app.use('/api', shipRoutes); // se debe agregar "/api" a la URI para consultar
 
 const port = 8000;
 
