@@ -14,7 +14,7 @@ const ShipList = ({ships}) => {
                     <th>Pos Z</th>
                     <th>Destino</th>
                     <th>Apuntando</th>
-                    <th>Zarpó</th>
+                    <th>Fecha de Salida</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,7 +26,7 @@ const ShipList = ({ships}) => {
                         <td>{ship.pos_z}</td>
                         <td>{ship.destiny}</td>
                         <td>{ship.pointing_at}</td>
-                        <td>{moment(ship.sail_date).format("D/M/YYYY")}</td>
+                        <td>{moment.utc(ship.sail_date).format("D/MM/YYYY")}</td>
                         <td>
                             <div className='mb-3'>
                             </div>
