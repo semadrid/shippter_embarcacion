@@ -37,7 +37,7 @@ function App() {
 				<div className='row'>
 					<div className='col-7'>
 						<h2 style={{textAlign: 'center'}}>Lista de Embarcaciones</h2>
-						<ShipList ships={ships}></ShipList>
+						<ShipList ships={ships} ship={ship} setListUpdated= {setListUpdated}></ShipList>
 					</div>
 			<div className='col-5'>
 						<h2 style={{textAlign: 'center'}}>Crear Embarcación</h2>

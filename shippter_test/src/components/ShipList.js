@@ -3,7 +3,19 @@ import moment from "moment";
 
 
 //tabla para ships TO DO editar y borrar
-const ShipList = ({ships}) => {
+const ShipList = ({ships, ship, setListUpdated}) => {
+
+    const handleDelete = id => {
+        const requestInit = {
+            method: 'DELETE'
+        }
+        fetch('http://localhost:8000/api/ships/' + id, requestInit)
+		.then(res => res.text())
+		.then(res => console.log(res))
+
+        setListUpdated(true)
+    }
+
     return (
         <table className='table'>
             <thead>
@@ -29,6 +41,7 @@ const ShipList = ({ships}) => {
                         <td>{moment.utc(ship.sail_date).format("D/MM/YYYY")}</td>
                         <td>
                             <div className='mb-3'>
+                                <button onClick={() => handleDelete(ship._id)} className='btn btn-danger'>Borrar</button>
                             </div>
                         </td>
                     </tr>
