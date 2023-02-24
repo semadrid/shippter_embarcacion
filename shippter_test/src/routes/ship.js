@@ -1,7 +1,9 @@
 const express = require("express");
 const shipSchema = require("../model/ship.js")
+const cors = require('cors');
 
 const router  = express.Router();
+router.use(cors())
 
 
 //CREATE

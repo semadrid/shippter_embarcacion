@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+//esquema de datos para ships
 const shipSchema = mongoose.Schema({
      name: {
         type: String,
