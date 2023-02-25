@@ -14,10 +14,6 @@ const shipSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
-  pos_z: {
-    type: Number,
-    required: true,
-  },
   destiny: {
     type: String,
     required: true,

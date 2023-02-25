@@ -31,13 +31,11 @@ const ShipList = ({ ships, ship, setListUpdated }) => {
   const handleSubmit = (ship) => {
     ship.pos_x = parseFloat(ship.pos_x);
     ship.pos_y = parseFloat(ship.pos_y);
-    ship.pos_z = parseFloat(ship.pos_z);
     //validación campos vacíos
     if (
       ship.name === "" ||
       ship.pos_x === null ||
       ship.pos_y === null ||
-      ship.pos_z === null ||
       ship.destiny === "" ||
       ship.pointing_at === "" ||
       ship.sail_date === ""
@@ -66,7 +64,6 @@ const ShipList = ({ ships, ship, setListUpdated }) => {
             <th>Nombre</th>
             <th>Pos X</th>
             <th>Pos Y</th>
-            <th>Pos Z</th>
             <th>Destino</th>
             <th>Apuntando</th>
             <th>Fecha de Salida</th>
@@ -78,7 +75,6 @@ const ShipList = ({ ships, ship, setListUpdated }) => {
               <td>{ship.name}</td>
               <td>{ship.pos_x}</td>
               <td>{ship.pos_y}</td>
-              <td>{ship.pos_z}</td>
               <td>{ship.destiny}</td>
               <td>{ship.pointing_at}</td>
               <td>{moment.utc(ship.sail_date).format("D/MM/YYYY")}</td>

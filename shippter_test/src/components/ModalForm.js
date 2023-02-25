@@ -87,20 +87,6 @@ const ModalForm = ({ info, visible, setVisible, handleSubmit }) => {
                 ></input>
               </div>
               <div className="mb-3">
-                <label htmlFor="pos_z" className="form-label">
-                  Pos Z
-                </label>
-                <input
-                  value={ship.pos_z}
-                  name="pos_z"
-                  onChange={handleChange}
-                  type="number"
-                  id="pos_z"
-                  className="form-control"
-                  placeholder="Número de posición Z"
-                ></input>
-              </div>
-              <div className="mb-3">
                 <label htmlFor="destiny" className="form-label">
                   Destino
                 </label>

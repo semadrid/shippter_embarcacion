@@ -20,7 +20,6 @@ const Form = ({ ship, setShip, setListUpdated }) => {
       name === "" ||
       pos_x === null ||
       pos_y === null ||
-      pos_z === null ||
       destiny === "" ||
       pointing_at === "" ||
       sail_date === ""
@@ -41,7 +40,6 @@ const Form = ({ ship, setShip, setListUpdated }) => {
           name: "",
           pos_x: 0,
           pos_y: 0,
-          pos_z: 0,
           destiny: "",
           pointing_at: "",
           sail_date: "",
@@ -93,20 +91,6 @@ const Form = ({ ship, setShip, setListUpdated }) => {
           id="pos_y"
           className="form-control"
           placeholder="Número de posición Y"
-        ></input>
-      </div>
-      <div className="mb-3">
-        <label htmlFor="pos_z" className="form-label">
-          Pos Z
-        </label>
-        <input
-          value={pos_z}
-          name="pos_z"
-          onChange={handleChange}
-          type="number"
-          id="pos_z"
-          className="form-control"
-          placeholder="Número de posición Z"
         ></input>
       </div>
       <div className="mb-3">
