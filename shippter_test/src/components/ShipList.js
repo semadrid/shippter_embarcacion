@@ -90,9 +90,13 @@ const ShipList = ({ ships, ship, setListUpdated }) => {
                   >
                     Borrar
                   </button>
+                </div>
+              </td>
+              <td>
+                <div className="mb-3">
                   <button
                     onClick={() => handleOnClickUpdate(ship)}
-                    className="btn btn-danger"
+                    className="btn btn-warning"
                   >
                     Actualizar
                   </button>
