@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import Navbar from "./components/NavBar";
 import ShipList from "./components/ShipList";
 import Form from "./components/Form";
+import MapChart from "./components/MapChart";
 
 function App() {
   //para crear usuario
@@ -49,6 +50,11 @@ function App() {
               setShip={setShip}
               setListUpdated={setListUpdated}
             />
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <MapChart ships={ships}></MapChart>
+            </div>
           </div>
         </div>
       </div>
