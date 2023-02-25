@@ -67,7 +67,7 @@ const Form = ({ ship, setShip, setListUpdated }) => {
       </div>
       <div className="mb-3">
         <label htmlFor="pos_x" className="form-label">
-          Pos X
+          Latitud
         </label>
         <input
           value={pos_x}
@@ -76,12 +76,12 @@ const Form = ({ ship, setShip, setListUpdated }) => {
           type="number"
           id="pos_x"
           className="form-control"
-          placeholder="Número de posición X"
+          placeholder="Ingresar valor de la Latitud +- 0-90"
         ></input>
       </div>
       <div className="mb-3">
         <label htmlFor="pos_y" className="form-label">
-          Pos Y
+          Longitud
         </label>
         <input
           value={pos_y}
@@ -90,7 +90,7 @@ const Form = ({ ship, setShip, setListUpdated }) => {
           type="number"
           id="pos_y"
           className="form-control"
-          placeholder="Número de posición Y"
+          placeholder="Ingresar valor de Longitud +- 0-180"
         ></input>
       </div>
       <div className="mb-3">
