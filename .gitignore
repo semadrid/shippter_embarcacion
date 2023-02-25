@@ -1,2 +1,3 @@
 shippter_test/request.http
 /node_modules
+shippter_test/src/components/.prettierrc
